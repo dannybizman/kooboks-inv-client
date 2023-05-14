@@ -1,0 +1,31 @@
+.kb_logo{
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.sb_nav_items{
+    text-decoration: none;
+    color: white;
+    background-color: transparent !important;
+}
+
+.sidebarA ul li:hover {
+    border-radius: 5px;
+    background-color: grey;
+    cursor: pointer;
+    
+}
+  
+
+
+.sidebarA ul li:hover a{
+    color: white;
+    
+    
+}
+.active {
+    border-radius: 10px;
+    color: white;
+    background-color: #f38119;
+}
