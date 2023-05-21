@@ -17,7 +17,7 @@ const Supply = () => {
             </div>
           </div>
 
-          <div className=" container row row-cols-1 row-cols-md-3 g-4">
+          <div className=" container row row-cols-1 row-cols-md-3 g-4 mb-4">
             <div className="col">
               <div className="card">
                 <div className="card-body">
@@ -28,12 +28,15 @@ const Supply = () => {
                   />
                   <h5 className="card-title">Product Title</h5>
                   <p className="card-text">Product description goes here...</p>
-                  <button type="button" className="btn btn-success">
-                   In Stock<span className="badge text-bg-secondary">4</span>
-                  </button>
+                 
                 </div>
-                <div className="card-footer item-align-center flex">
+                <div className="card-footer d-flex flex-column h-100 justify-content-center align-items-center">
                   <div className="row">
+                    <div className="col"> 
+                    <button type="button" className="btn btn-success">
+                   <span className="badge text-bg-secondary">4</span>
+                  </button>
+                  </div>
                     <div className="col">
                       <button className="btn btn-primary"><i className="bi bi-cart-fill"/></button>
                     </div>
@@ -56,12 +59,14 @@ const Supply = () => {
                   />
                   <h5 className="card-title">Product Title</h5>
                   <p className="card-text">Product description goes here...</p>
-                  <button type="button" className="btn btn-danger">
-                    Out Of Stock<span className="badge text-bg-secondary">0</span>
-                  </button>
                 </div>
-                <div className="card-footer">
+                <div className="card-footer d-flex flex-column h-100 justify-content-center align-items-center">
                   <div className="row">
+                  <div className="col"> 
+                    <button type="button" className="btn btn-danger">
+                   <span className="badge text-bg-secondary">0</span>
+                  </button>
+                  </div>
                     <div className="col">
                       <button className="btn btn-primary"><i className="bi bi-cart-fill"/></button>
                     </div>
@@ -84,12 +89,14 @@ const Supply = () => {
                   />
                   <h5 className="card-title">Product Title</h5>
                   <p className="card-text">Product description goes here...</p>
-                  <button type="button" className="btn btn-success">
-                    In Stock<span className="badge text-bg-secondary">4</span>
-                  </button>
                 </div>
-                <div className="card-footer">
+                <div className="card-footer d-flex flex-column h-100 justify-content-center align-items-center">
                   <div className="row">
+                  <div className="col"> 
+                    <button type="button" className="btn btn-success">
+                   <span className="badge text-bg-secondary">4</span>
+                  </button>
+                  </div>
                     <div className="col">
                       <button className="btn btn-primary"><i className="bi bi-cart-fill"/></button>
                     </div>
@@ -112,41 +119,14 @@ const Supply = () => {
                   />
                   <h5 className="card-title">Product Title</h5>
                   <p className="card-text">Product description goes here...</p>
-                  <button type="button" className="btn btn-success">
-                    In Stock<span className="badge text-bg-secondary">4</span>
-                  </button>
                 </div>
-                <div className="card-footer">
+                <div className="card-footer d-flex flex-column h-100 justify-content-center align-items-center">
                   <div className="row">
-                    <div className="col">
-                      <button className="btn btn-primary"><i className="bi bi-cart-fill"/></button>
-                    </div>
-                    <div className="col">
-                      <button className="btn btn-secondary">
-                       <i className="bi bi-eye-fill"/>
-                      </button>
-                    </div>
+                  <div className="col"> 
+                    <button type="button" className="btn btn-danger">
+                   <span className="badge text-bg-secondary">0</span>
+                  </button>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col">
-              <div className="card">
-                <div className="card-body">
-                  <img
-                    src="../assets/img/avatarr.png"
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <h5 className="card-title">Product Title</h5>
-                  <p className="card-text">Product description goes here...</p>
-                  <button type="button" className="btn btn-danger">
-                    Out of Stock<span className="badge text-bg-secondary">0</span>
-                  </button>
-                </div>
-                <div className="card-footer">
-                  <div className="row">
                     <div className="col">
                       <button className="btn btn-primary"><i className="bi bi-cart-fill"/></button>
                     </div>
@@ -170,12 +150,46 @@ const Supply = () => {
                   />
                   <h5 className="card-title">Product Title</h5>
                   <p className="card-text">Product description goes here...</p>
-                  <button type="button" className="btn btn-danger">
-                    Out of Stock<span className="badge text-bg-secondary">0</span>
-                  </button>
                 </div>
-                <div className="card-footer">
+                <div className="card-footer d-flex flex-column h-100 justify-content-center align-items-center">
                   <div className="row">
+                  <div className="col"> 
+                    <button type="button" className="btn btn-success">
+                   <span className="badge text-bg-secondary">4</span>
+                  </button>
+                  </div>
+                    <div className="col">
+                      <button className="btn btn-primary"><i className="bi bi-cart-fill"/></button>
+                    </div>
+                    <div className="col">
+                      <button className="btn btn-secondary">
+                       <i className="bi bi-eye-fill"/>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col">
+              <div className="card">
+                <div className="card-body">
+                  <img
+                    src="../assets/img/avatarr.png"
+                    className="card-img-top"
+                    alt="..."
+                  />
+                  <h5 className="card-title">Product Title</h5>
+                  <p className="card-text">Product description goes here...</p>
+               
+                </div>
+                <div className="card-footer d-flex flex-column h-100 justify-content-center align-items-center">
+                  <div className="row">
+                  <div className="col"> 
+                    <button type="button" className="btn btn-success">
+                   <span className="badge text-bg-secondary">4</span>
+                  </button>
+                  </div>
                     <div className="col">
                       <button className="btn btn-primary"><i className="bi bi-cart-fill"/></button>
                     </div>

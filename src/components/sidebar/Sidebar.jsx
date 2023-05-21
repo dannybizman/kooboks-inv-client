@@ -37,18 +37,7 @@ const Sidebar = () => {
 
        
 
-          <li
-            className={active === 2 ? "active nav-item p-2" : "nav-item p-2"}
-            onClick={(e) => setActive(2)}
-          >
-            <NavLink
-              to="/add/product"
-              className="text-decoration-none text-white p-2"
-            >
-              <i className="bi bi-plus-circle me-3 fs-4"></i>
-              <span className="fs-6">Add Product</span>
-            </NavLink>
-          </li>
+          
 
           <li className="nav-item dropdown">
             <a
@@ -64,6 +53,20 @@ const Sidebar = () => {
             </a>
 
             <ul className="dropdown-menu bg-dark" aria-labelledby="sidebarDropdown">
+
+            <li
+            className={active === 2 ? "active nav-item p-2" : "nav-item p-2"}
+            onClick={(e) => setActive(2)}
+          >
+            <NavLink
+              to="/add/product"
+              className="text-decoration-none text-white p-2"
+            >
+              <i className="bi bi-plus-circle me-3 fs-5"></i>
+              <span className="fs-7">Add Product</span>
+            </NavLink>
+          </li>
+
           <li
             className={active === 3 ? "active nav-item p-2" : "nav-item p-2"}
             onClick={(e) => setActive(3)}

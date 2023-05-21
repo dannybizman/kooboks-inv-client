@@ -39,7 +39,11 @@ const UserProfile = () => {
             <div class="row row-cols-1 row-cols-md-2 g-4">
               <div className="col">
                 <div className="card border-3">
-                <img src="../assets/img/avatarr.png" className="profile-img mt-3" alt="..." />
+                  <div className="bg-dark">
+                  <img src="../assets/img/avatarr.png" className="profile-img mt-3" alt="..." />
+                  <h4 className="text-white text-center">Role: Admin</h4>
+                  </div>
+               
                   <div className="card-body">
                     <h5 className="card-title mb-3 text-center">Profile Details</h5>
 
