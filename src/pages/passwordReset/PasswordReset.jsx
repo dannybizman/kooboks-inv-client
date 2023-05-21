@@ -1,28 +1,52 @@
 import { NavLink } from "react-router-dom";
 import "./passwordReset.css";
-import React from 'react'
+import React, {useState} from 'react';
+import PasswordInput from "../../components/passwordInput/PasswordInput";
+
+
+const initialState = {
+    password: "",
+    password2: ""
+  };
+  
 
 const PasswordReset = () => {
+    const [formData, setFormData] = useState(initialState);
+    const { password, password2 } = formData;
+
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+      };
+
+
   return (
     <div className="login template d-flex justify-content-center align-items-center vh-100 bg-dark">
     <div className="form_container p-5 rounded bg-white">
-    <NavLink  to="/" className="align-items-center d-flex justify-content-center">
+    <div>
+      <NavLink  to="/" className="align-items-center d-flex justify-content-center">
         <img src="../../assets/img/koolboks-logo.png" alt="" className="logo-auth"/>
         </NavLink>
+      </div> 
     <form>
         <h3 className="text-center">Reset Password</h3>
-        <div className="mb-2">
-            <label htmlFor="new password">New Password</label>
-            <input type="email" placeholder="Enter a new password" className="form-control" />
-        </div>
+        <PasswordInput
+            placeholder="Password"
+            name="password"
+            value={password}
+            onChange={handleInputChange}
+          />
 
-        <div className="mb-2">
-            <label htmlFor="confirm password">Confrim Password</label>
-            <input type="password" placeholder="Confirm new password" className="form-control" />
-        </div>
+          <PasswordInput
+            placeholder="Confirm password"
+            name="password2"
+            value={password2}
+            onChange={handleInputChange}
+          />
 
         <div className="d-grid">
-            <button className="btn btn-auth btn-sm">Change Password</button>
+            <button className="btn btn-auth btn-sm">Reset Password</button>
         </div>
     </form>
     </div>

@@ -46,7 +46,7 @@ const Dashboard = () => {
                   <tr>
                     <th scope="row">1</th>
                     <td>208 Litres Freezer </td>
-                    <td>Outrights</td>
+                    <td>Freezer</td>
                     <td>₦200, 000</td>
                     <td>10</td>
                     <td>₦2,000, 000</td>
@@ -61,7 +61,7 @@ const Dashboard = () => {
                   <tr>
                     <th scope="row">2</th>
                     <td>1190 Litres Chillers</td>
-                    <td>PayGo</td>
+                    <td>Fridge</td>
                     <td>₦200, 000</td>
                     <td>10</td>
                     <td>₦2,000, 000</td>
@@ -76,7 +76,7 @@ const Dashboard = () => {
                   <tr>
                     <th scope="row">3</th>
                     <td>538 Litres Freezer</td>
-                    <td>PayGo</td>
+                    <td>Freezer</td>
                     <td>₦200, 000</td>
                     <td>10</td>
                     <td>₦2,000, 000</td>
@@ -91,7 +91,7 @@ const Dashboard = () => {
                   <tr>
                     <th scope="row">4</th>
                     <td>538 Litres Freezer</td>
-                    <td>PayGo</td>
+                    <td>Freezer</td>
                     <td>₦200, 000</td>
                     <td>10</td>
                     <td>₦2,000, 000</td>
@@ -106,7 +106,7 @@ const Dashboard = () => {
                   <tr>
                     <th scope="row">5</th>
                     <td>538 Litres Freezer</td>
-                    <td>PayGo</td>
+                    <td>Ice Maker</td>
                     <td>₦200, 000</td>
                     <td>10</td>
                     <td>₦2,000, 000</td>
@@ -121,7 +121,7 @@ const Dashboard = () => {
                   <tr>
                     <th scope="row">6</th>
                     <td>538 Litres Freezer</td>
-                    <td>PayGo</td>
+                    <td>Fridge</td>
                     <td>₦200, 000</td>
                     <td>10</td>
                     <td>₦2,000, 000</td>

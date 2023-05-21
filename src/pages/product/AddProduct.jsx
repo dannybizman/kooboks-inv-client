@@ -13,46 +13,45 @@ const AddProduct = () => {
         </div>
         <div className="col overflow-auto">
           <Navbar />
-          <Card />
           <div className="p-5">
             <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
               <h1 className="h2">Add Product</h1>
             </div>
           </div>
-
+          <div className="container mb-4">
+          <div className="card border-3">
           <div className="p-5 align-content-center mb-2 mt-4">
             <form className="row g-3">
-              <div className="col-md-6">
+              <div className="col-md-4">
                 <label for="inputEmail4" className="form-label">
                   Product Title
                 </label>
-                <input type="text" className="form-control" id="inputEmail4" />
+                <input type="text" className="form-control" />
               </div>
-              <div className="col-md-3">
-                <label for="inputPassword4" className="form-label">
+              <div className="col-md-4">
+                <label className="form-label">
                   Product quantity
                 </label>
                 <input
-                  type="password"
+                  type="text"
                   className="form-control"
-                  id="inputPassword4"
                 />
               </div>
 
-              <div className="col-md-3">
-                <label for="inputCity" className="form-label">
+              <div className="col-md-4">
+                <label className="form-label">
                   Product Price
                 </label>
-                <input type="text" className="form-control" id="inputCity" />
+                <input type="text" className="form-control"  />
               </div>
 
-              <div className="col-md-3">
-                <label for="inputState" className="form-label">
+              <div className="col-md-4">
+                <label  className="form-label">
                   Product Category
                 </label>
-                <input type="text" className="form-control" id="inputCity" />{" "}
+                <input type="text" className="form-control"  />
               </div>
-              <div className="col-sm-4">
+              <div className="col-sm-6">
                 <label
                   className="custom-file-label form-label"
                   for="inputGroupFile"
@@ -100,7 +99,9 @@ const AddProduct = () => {
             </form>
           </div>
         </div>
-      </div>
+        </div>
+     </ div>
+     </ div>
     </>
   );
 };

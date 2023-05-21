@@ -23,9 +23,9 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <div className="navbar-nav ms-auto mb-2 mb-lg-0"> 
           <div className="mx-2">
-          <button className="btn btn-md btn-outline-secondary text-white">
+          <NavLink to="/user/profile"className="btn btn-md btn-outline-secondary text-white">
                 Account <span><i className="bi bi-person-circle"/></span>
-            </button>
+            </NavLink>
           </div>
           <div>
           <button className="btn btn-md btn-outline-danger text-white">
