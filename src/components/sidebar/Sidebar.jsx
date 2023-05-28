@@ -20,18 +20,19 @@ const Sidebar = () => {
             />
           </NavLink>
         </div>
-        <hr className="text-secondary mt-2" />
-        <ul className="nav nav-pills flex-column mt-2">
+        <hr className="text-secondary mt-2 mb-4" />
+
+        <ul className="nav nav-pills flex-column">
           <li
-            className={active === 1 ? "active nav-item p-2" : "nav-item p-2"}
+            className={active === 1 ? "active nav-item p-2 mb-4" : "nav-item p-2 mb-4"}
             onClick={(e) => setActive(1)}
           >
             <NavLink
               to="/dashboard"
               className="text-decoration-none text-white p-2"
             >
-              <i className="bi bi-speedometer2 me-3 fs-4"></i>
-              <span className="fs-6">Overview</span>
+              <i className="bi bi-speedometer2 me-2 sideBar-fonts"></i>
+              <span className="sideBar-fonts">Overview</span>
             </NavLink>
           </li>
 
@@ -39,22 +40,22 @@ const Sidebar = () => {
 
           
 
-          <li className="nav-item dropdown">
+          <li className="dropdown mb-4 p-2">
             <a
-              className="nav-link nav-item text-decoration-none text-white p-2 dropdown-toggle"
+              className="nav-item text-decoration-none text-white p-2 dropdown-toggle"
               href="#"
               id="sidebarDropdown"
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <i className="bi bi-shop me-3 fs-4" />
-              <span className="fs-6">Store</span>
+              <i className="bi bi-shop me-2 sideBar-fonts" />
+              <span className="sideBar-fonts">Store</span>
             </a>
 
-            <ul className="dropdown-menu bg-dark" aria-labelledby="sidebarDropdown">
+            <ul className="dropdown-menu bg-dark border-white" aria-labelledby="sidebarDropdown">
 
-            <li
+            <li 
             className={active === 2 ? "active nav-item p-2" : "nav-item p-2"}
             onClick={(e) => setActive(2)}
           >
@@ -62,8 +63,8 @@ const Sidebar = () => {
               to="/add/product"
               className="text-decoration-none text-white p-2"
             >
-              <i className="bi bi-plus-circle me-3 fs-5"></i>
-              <span className="fs-7">Add Product</span>
+              <i className="bi bi-plus-circle me-2 sideBar-fonts"></i>
+              <span className="sideBar-fonts">Add Product</span>
             </NavLink>
           </li>
 
@@ -75,8 +76,8 @@ const Sidebar = () => {
               to="/supply"
               className="text-decoration-none text-white p-2"
             >
-              <i className="bi bi-truck me-3 fs-5"></i>
-              <span className="fs-7">Supply</span>
+              <i className="bi bi-truck me-2 sideBar-fonts"></i>
+              <span className="sideBar-fonts">Supply</span>
             </NavLink>
           </li>
 
@@ -88,15 +89,15 @@ const Sidebar = () => {
               to="/manage/store"
               className="text-decoration-none text-white p-2"
             >
-              <i className="bi bi-boxes me-3 fs-7"></i>
-              <span className="fs-12">Manage</span>
+              <i className="bi bi-boxes me-2 sideBar-fonts"></i>
+              <span className="sideBar-fonts">Manage</span>
             </NavLink>
           </li>
 
           </ul>
           </li>
           
-          <li className="nav-item dropdown">
+          <li className="mb-4 dropdown p-2">
             <a
               className="nav-link nav-item text-decoration-none text-white p-2 dropdown-toggle"
               href="#"
@@ -105,53 +106,69 @@ const Sidebar = () => {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <i className="bi bi-tools me-3 fs-4" />
-              <span className="fs-6">Settings</span>
+              <i className="bi bi-tools me-2 sideBar-fonts" />
+              <span className="sideBar-fonts">Settings</span>
             </a>
 
-            <ul className="dropdown-menu bg-dark" aria-labelledby="sidebarDropdown">
-              <li
+            <ul className="dropdown-menu bg-dark border-white" aria-labelledby="sidebarDropdown">
+            <li
                 className={
-                  active === 4 ? "active nav-item p-2 " : "nav-item p-2"
+                  active === 4 ? "active nav-item p-2" : "nav-item p-2"
                 }
                 onClick={(e) => setActive(4)}
-              >
-                <NavLink
-                  to="/user/profile"
-                  className="text-decoration-none text-white p-2"
-                >
-                  <i className="bi bi-person-circle me-3 fs-7" />
-                  <span className="fs-12">Edit Profile</span>
-                </NavLink>
-              </li>
-
-              <li
-                className={
-                  active === 5 ? "active nav-item p-2" : "nav-item p-2"
-                }
-                onClick={(e) => setActive(5)}
               >
                 <NavLink
                   to="/users"
                   className="text-decoration-none text-white p-2"
                 >
-                  <i className="bi bi-people me-3 fs-7" />
-                  <span className="fs-12">Users</span>
+                  <i className="bi bi-people me-2 sideBar-fonts" />
+                  <span className="sideBar-fonts">Users</span>
                 </NavLink>
               </li>
+              <li
+                className={
+                  active === 5 ? "active nav-item p-2 " : "nav-item p-2"
+                }
+                onClick={(e) => setActive(5)}
+              >
+                <NavLink
+                  to="/user/profile"
+                  className="text-decoration-none text-white p-2"
+                >
+                  <i className="bi bi-person-circle me-2 sideBar-fonts" />
+                  <span className="sideBar-fonts">Edit Profile</span>
+                </NavLink>
+              </li>
+
+              <li
+                className={
+                  active === 6 ? "active nav-item p-2 " : "nav-item p-2"
+                }
+                onClick={(e) => setActive(6)}
+              >
+                <NavLink
+                  to="/password/setting"
+                  className="text-decoration-none text-white p-2"
+                >
+                  <i className="bi bi-person-fill-lock me-3 sideBar-fonts" />
+                  <span className="sideBar-fonts">Change Password</span>
+                </NavLink>
+              </li>
+
+       
             </ul>
           </li>
 
           <li
-            className={active === 6 ? "active nav-item p-2" : "nav-item p-2"}
-            onClick={(e) => setActive(6)}
+            className={active === 7 ? "active nav-item p-2" : "nav-item p-2"}
+            onClick={(e) => setActive(7)}
           >
             <NavLink
               to="/report"
               className="text-decoration-none text-white p-2"
             >
-              <i className="bi bi-grid me-3 fs-4" />
-              <span className="fs-6">Report</span>
+              <i className="bi bi-grid me-2 sideBar-fonts" />
+              <span className="sideBar-fonts">Report</span>
             </NavLink>
           </li>
         </ul>
@@ -161,8 +178,8 @@ const Sidebar = () => {
 
         <div className="nav-item p-2">
           <NavLink to="/user/profile" className="sb_nav_items p-1">
-            <i className="bi bi-person-circle me-3 fs-3"></i>
-            <span className="fs-4">
+            <i className="bi bi-person-circle me-2 sideBar-fonts"></i>
+            <span className="sideBar-fonts">
               <strong>Ayoola</strong>
             </span>
           </NavLink>

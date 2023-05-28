@@ -22,11 +22,11 @@ const Supply = () => {
               <div className="card">
                 <div className="card-body">
                   <img
-                    src="../assets/img/avatarr.png"
+                    src="../assets/img/product-bg-1.png"
                     className="card-img-top"
                     alt="..."
                   />
-                  <h5 className="card-title">Product Title</h5>
+                  <h5 className="card-title">158 Litres</h5>
                   <p className="card-text">Product description goes here...</p>
                  
                 </div>
@@ -53,11 +53,11 @@ const Supply = () => {
               <div className="card">
                 <div className="card-body">
                   <img
-                    src="../assets/img/avatarr.png"
+                    src="../assets/img/product-bg-2.png"
                     className="card-img-top"
                     alt="..."
                   />
-                  <h5 className="card-title">Product Title</h5>
+                  <h5 className="card-title">Battery</h5>
                   <p className="card-text">Product description goes here...</p>
                 </div>
                 <div className="card-footer d-flex flex-column h-100 justify-content-center align-items-center">
@@ -83,11 +83,11 @@ const Supply = () => {
               <div className="card">
                 <div className="card-body">
                   <img
-                    src="../assets/img/avatarr.png"
+                    src="../assets/img/product-bg-3.png"
                     className="card-img-top"
                     alt="..."
                   />
-                  <h5 className="card-title">Product Title</h5>
+                  <h5 className="card-title">Solar Pannels</h5>
                   <p className="card-text">Product description goes here...</p>
                 </div>
                 <div className="card-footer d-flex flex-column h-100 justify-content-center align-items-center">
@@ -113,11 +113,11 @@ const Supply = () => {
               <div className="card">
                 <div className="card-body">
                   <img
-                    src="../assets/img/avatarr.png"
+                    src="../assets/img/product-bg-4.png"
                     className="card-img-top"
                     alt="..."
                   />
-                  <h5 className="card-title">Product Title</h5>
+                  <h5 className="card-title">LED Bulb</h5>
                   <p className="card-text">Product description goes here...</p>
                 </div>
                 <div className="card-footer d-flex flex-column h-100 justify-content-center align-items-center">
@@ -144,11 +144,11 @@ const Supply = () => {
               <div className="card">
                 <div className="card-body">
                   <img
-                    src="../assets/img/avatarr.png"
+                    src="../assets/img/product-bg-1.png"
                     className="card-img-top"
                     alt="..."
                   />
-                  <h5 className="card-title">Product Title</h5>
+                  <h5 className="card-title">208 Litres</h5>
                   <p className="card-text">Product description goes here...</p>
                 </div>
                 <div className="card-footer d-flex flex-column h-100 justify-content-center align-items-center">
@@ -175,11 +175,11 @@ const Supply = () => {
               <div className="card">
                 <div className="card-body">
                   <img
-                    src="../assets/img/avatarr.png"
+                    src="../assets/img/product-bg-2.png"
                     className="card-img-top"
                     alt="..."
                   />
-                  <h5 className="card-title">Product Title</h5>
+                  <h5 className="card-title">Battery</h5>
                   <p className="card-text">Product description goes here...</p>
                
                 </div>

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400&display=swap');
+
+
 .form_container{
     width: 30%;
 }
@@ -26,4 +29,12 @@
 
 .btn-auth{
     background-color: #f38119;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Poppins', sans-serif;
 }

@@ -11,11 +11,12 @@ import Footer from "./components/footer/Footer";
 import Dashboard from "./pages/dashboard/Dashboard";
 import AddProduct from "./pages/product/AddProduct";
 import UserProfile from "./pages/userprofile/UserProfile";
-import Setting from "./pages/setting/Setting";
+import PasswordSetting from "./pages/passwordsetting/PasswordSetting";
 import Users from "./pages/users/Users";
 import Report from "./pages/report/Report";
 import Supply from "./pages/supply/Supply";
 import ManageSupply from "./pages/supply/ManageSupply";
+import Verify from "./pages/verify/Verify";
 
 const App = () => {
   return (
@@ -33,7 +34,8 @@ const App = () => {
           <Route exact path="/manage/store" element={<ManageSupply/>} />
           <Route exact path="/add/product" element={<AddProduct/>} />
           <Route exact path="/user/profile" element={<UserProfile/>} />
-          <Route exact path="/settings" element={<Setting/>} />
+          <Route exact path="/verify/:verificationToken" element={<Verify/>} />
+          <Route exact path="/password/setting" element={<PasswordSetting/>} />
           <Route exact path="/users" element={<Users/>} />
           <Route exact path="/report" element={<Report />} />
         </Routes>

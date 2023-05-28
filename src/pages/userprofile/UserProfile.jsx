@@ -1,26 +1,30 @@
-import Card from "../../components/card/Card";
 import Navbar from "../../components/navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
 import "./userProfile.css";
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import PasswordInput from "../../components/passwordInput/PasswordInput";
 
 const initialState = {
-  password: "",
-  password2: "",
+  name: "Jinadu Okon",
+  email: "okon@koolboks.com",
+  phone: "+33 xxxx-xxxx-xx",
+  bio: "Store manager For Koolboks Warehouse",
+  photo: "",
+  role: "Store Manager",
+  
+  IsVerified: "false",
 };
 
 const UserProfile = () => {
-  const [formData, setFormData] = useState(initialState);
+  const [profile, setProfile] = useState(initialState);
 
-  const { password, password2 } = formData;
-
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
+  const {
+    password, 
+    password2 
+  } = profile;
 
   const handleInputChange = () => {};
+
+  const handleImageChange = () => {};
 
   return (
     <>
@@ -36,24 +40,28 @@ const UserProfile = () => {
             </div>
           </div>
           <div className="container mb-4">
-            <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div className="row row-cols-1 row-cols-md-2 g-4">
               <div className="col">
                 <div className="card border-3">
                   <div className="bg-dark">
-                  <img src="../assets/img/avatarr.png" className="profile-img mt-3" alt="..." />
-                  <h4 className="text-white text-center">Role: Admin</h4>
+                    <img
+                      src="../assets/img/avatarr.png"
+                      className="profile-img mt-3"
+                      alt="..."
+                    />
+                    <h4 className="text-white text-center">
+                      Role: Super Admin
+                    </h4>
                   </div>
-               
-                  <div className="card-body">
-                    <h5 className="card-title mb-3 text-center">Profile Details</h5>
 
+                  <div className="card-body">
                     <form>
                       <div className="mb-3">
                         <label
                           className="custom-file-label form-label"
                           for="inputGroupFile"
                         >
-                         Profile Image
+                          Change Profile
                         </label>
                         <span
                           action="/upload"
@@ -64,18 +72,20 @@ const UserProfile = () => {
                             <input
                               type="file"
                               className="bi bi-images fs-7"
+                              accept="image/*"
                               name="image"
+                              onChange={handleImageChange}
                             />
                           </div>
                         </span>
                       </div>
 
                       <div className="mb-2">
-                      <label className="form-label">Full Name:</label>
+                        <label className="form-label">Full Name:</label>
                         <input
                           type="text"
                           name="name"
-                          value={name}
+                          value={profile.name}
                           onChange={handleInputChange}
                           placeholder="Full name"
                           className="form-control"
@@ -83,60 +93,48 @@ const UserProfile = () => {
                       </div>
 
                       <div className="mb-2">
-                      <label className="form-label">Email:</label>
+                        <label className="form-label">Email:</label>
                         <input
                           type="email"
                           name="email"
-                          value={email}
+                          value={profile.email}
                           onChange={handleInputChange}
                           placeholder="Email"
                           className="form-control"
+                          disabled
                         />
                       </div>
 
                       <div className="mb-2">
-                      <label className="form-label">Phone Number:</label>
+                        <label className="form-label">Phone Number:</label>
                         <input
                           type="text"
                           name="phone"
-                          value={phone}
+                          value={profile.phone}
                           onChange={handleInputChange}
                           placeholder="Phone number"
                           className="form-control"
                         />
                       </div>
 
-                      <div className="d-grid-none">
-                      
-                        <button className="btn btn-auth btn-sm">Update profile</button>
+                      <div className="mb-3">
+                        <label
+                          className="form-label"
+                        >
+                         Bio
+                        </label>
+                        <textarea
+                          className="form-control"
+                          name="bio"
+                          value={profile.bio}
+                          onChange={handleInputChange}
+                          rows="3"
+                        ></textarea>
                       </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="card border-3">
-                  <div className="card-body">
-                    <h5 className="card-title text-center">Change Password</h5>
-
-                    <form>
-                      <PasswordInput
-                        placeholder="Password"
-                        name="password"
-                        value={password}
-                        onChange={handleInputChange}
-                      />
-
-                      <PasswordInput
-                        placeholder="Confirm password"
-                        name="password2"
-                        value={password2}
-                        onChange={handleInputChange}
-                      />
 
                       <div className="d-grid-none">
                         <button className="btn btn-auth btn-sm">
-                          Reset Password
+                          Update profile
                         </button>
                       </div>
                     </form>
